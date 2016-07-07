@@ -1,0 +1,23 @@
+.container {
+  background: #222;
+  color: white;
+  padding: 1em 2em;
+  border: 1px solid #222;
+}
+
+h1 {
+  letter-spacing: .1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0 .5em;
+}
+
+ul li {
+  margin: .5em 0;
+}
+
+li.active {
+  color: greenyellow;
+}

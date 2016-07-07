@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div *ngFor="let f of frameworks.reverse()">
+    <h1>{{f[0].framework}}</h1>
+    <ul>
+      <li *ngFor="let bp of f" [class.active]="bp.active">
+        {{bp.name}} ( min: {{bp.min + bp.units}} - max: {{bp.max + bp.units}} )
+      </li>
+    </ul>
+  </div>
+</div>
